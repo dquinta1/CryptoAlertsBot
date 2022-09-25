@@ -1,0 +1,17 @@
+{
+	"name": "cryptoalertsrbot",
+	"version": "1.0.0",
+	"description": "Basic Node app to trigger a Telegram bot to message when certain factors are met",
+	"main": "server.js",
+	"scripts": {
+		"test": "jasmine-node src/tests",
+		"dev": "nodemon --watch .env --watch src -r dotenv/config src/server.js",
+		"start": "node src/server.js"
+	},
+	"author": "Daniel Quintans",
+	"license": "ISC",
+	"dependencies": {
+		"coinbase": "^2.0.8",
+		"telegraf": "^4.9.2"
+	}
+}
